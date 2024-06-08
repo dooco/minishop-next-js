@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:digitalocean": "npm install --production=false && npm run build && npm ci"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.19",
@@ -31,5 +32,8 @@
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
